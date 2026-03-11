@@ -142,7 +142,6 @@ body {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
     color: var(--text);
-
 }
 
 .product-price {
@@ -152,7 +151,7 @@ body {
 }
 
 /* Footer */
-.footeer {
+.footer {
     background: var(--dark-bg);
     padding: 4rem 5%;
     margin-top: 5rem;
@@ -165,21 +164,22 @@ body {
     gap: 3rem;
 }
 
-.footeer-section h3 {
+.footer-section h3 {
     color: var(--accent);
     margin-bottom: 1.5rem;
 }
 
 .footer-links {
-    list-style: noon;
+    list-style: none;
 }
 
-.footeer-links 1i {
+.footer-links li {
     margin-bottom: 0.8rem;
 }
+
 .footer-links a {
     color: var(--text);
-    text-decoraation: none;
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
@@ -198,15 +198,15 @@ body {
     font-size: 1.5rem;
     transition: transform 0.3s ease;
 }
-.social-tcons a:hover {
+
+.social-icons a:hover {
     transform: translateY(-5px);
     color: var(--accent);
 }
 
-
-/* animations */
+/* Animations */
 @keyframes fadeIn {
-    from{ opacity: 0; transform: translateY(20px); }
+    from { opacity: 0; transform: translateY(20px); }
     to {opacity: 1; transform: translateY(0); }
 }
 
