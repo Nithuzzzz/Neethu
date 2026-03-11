@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Chinna Store</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,30 +14,45 @@
 <nav>
 <a href="index.html">Home</a>
 <a href="products.html">Products</a>
-<a href="cart.html">Cart</a>
+<a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
 <a href="contact.html">Contact</a>
 </nav>
 </header>
 
+<!-- HERO BANNER -->
 <section class="hero">
-<h2>Welcome to our Online Shopping Website</h2>
-<p>Best products at best prices</p>
+<h2>Big Sale is Live 🔥</h2>
+<p>Up to 50% off on top products</p>
+<button>Shop Now</button>
 </section>
 
-<section class="featured">
+<!-- SEARCH BAR -->
+<div class="search-bar">
+<input type="text" id="searchInput" placeholder="Search products...">
+</div>
+
+<!-- PRODUCTS -->
+<section class="products" id="product-list">
 
 <div class="product">
 <img src="images/shoe.jpg">
 <h3>Shoes</h3>
 <p>₹1999</p>
-<button onclick="addToCart('Shoes')">Add to Cart</button>
+<button onclick="addToCart('Shoes',1999)">Add to Cart</button>
 </div>
 
 <div class="product">
 <img src="images/watch.jpg">
 <h3>Watch</h3>
 <p>₹999</p>
-<button onclick="addToCart('Watch')">Add to Cart</button>
+<button onclick="addToCart('Watch',999)">Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="images/headphone.jpg">
+<h3>Headphones</h3>
+<p>₹1499</p>
+<button onclick="addToCart('Headphones',1499)">Add to Cart</button>
 </div>
 
 </section>
